@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { background: #f5f7f9; color: #17212b; }
+button, input, select { font: inherit; }
+@layer components {
+  .card { @apply rounded-xl border border-slate-200 bg-white shadow-sm; }
+  .badge { @apply inline-flex rounded-full px-2.5 py-1 text-xs font-semibold; }
+  .field { @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 outline-none ring-brand/20 focus:ring-4; }
+}
+
